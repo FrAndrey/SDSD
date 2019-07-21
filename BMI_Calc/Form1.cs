@@ -18,15 +18,21 @@ namespace BMI_Calc
         public MainForm()
         {
             InitializeComponent();
-            UserHeight = Convert.ToSingle(heightBox.Text);
-            UserWeight = Convert.ToSingle(weightBox.Text);
+           
             double bmi;
             if (imperialButton.Checked)
                 bmi = (UserWeight * 703) / (UserHeight * UserHeight);
             else if (metricButton.Checked)
                 bmi = UserWeight / (UserHeight * UserHeight);
+            outputBox.Text = bmi.ToString();
 
            
+        }
+
+        private void SubmitButton_Click(object sender, EventArgs e)
+        {
+            UserHeight = float.Parse(heightBox.Text);
+            UserWeight = float.Parse(weightBox.Text);
         }
     }
 }

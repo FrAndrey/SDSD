@@ -36,7 +36,7 @@
             this.heightBox = new System.Windows.Forms.TextBox();
             this.weightBox = new System.Windows.Forms.TextBox();
             this.outputBox = new System.Windows.Forms.TextBox();
-            this.Button = new System.Windows.Forms.Button();
+            this.submitButton = new System.Windows.Forms.Button();
             this.metricButton = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
@@ -114,14 +114,15 @@
             this.outputBox.TabIndex = 6;
             this.outputBox.Text = "Output(result)";
             // 
-            // Button
+            // submitButton
             // 
-            this.Button.Location = new System.Drawing.Point(53, 252);
-            this.Button.Name = "Button";
-            this.Button.Size = new System.Drawing.Size(167, 43);
-            this.Button.TabIndex = 7;
-            this.Button.Text = "Calculate!";
-            this.Button.UseVisualStyleBackColor = true;
+            this.submitButton.Location = new System.Drawing.Point(53, 252);
+            this.submitButton.Name = "submitButton";
+            this.submitButton.Size = new System.Drawing.Size(167, 43);
+            this.submitButton.TabIndex = 7;
+            this.submitButton.Text = "Calculate!";
+            this.submitButton.UseVisualStyleBackColor = true;
+            this.submitButton.Click += new System.EventHandler(this.SubmitButton_Click);
             // 
             // metricButton
             // 
@@ -139,7 +140,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(304, 441);
             this.Controls.Add(this.metricButton);
-            this.Controls.Add(this.Button);
+            this.Controls.Add(this.submitButton);
             this.Controls.Add(this.outputBox);
             this.Controls.Add(this.weightBox);
             this.Controls.Add(this.heightBox);
@@ -170,7 +171,7 @@
         private System.Windows.Forms.TextBox heightBox;
         private System.Windows.Forms.TextBox weightBox;
         private System.Windows.Forms.TextBox outputBox;
-        private System.Windows.Forms.Button Button;
+        private System.Windows.Forms.Button submitButton;
         private System.Windows.Forms.RadioButton metricButton;
     }
 }
