@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.imperialButton = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -37,6 +37,7 @@
             this.weightBox = new System.Windows.Forms.TextBox();
             this.outputBox = new System.Windows.Forms.TextBox();
             this.Button = new System.Windows.Forms.Button();
+            this.metricButton = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -44,7 +45,7 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(35, 381);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(35, 348);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -52,21 +53,21 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(233, 59);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // radioButton1
+            // imperialButton
             // 
-            this.radioButton1.Location = new System.Drawing.Point(12, 44);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(128, 35);
-            this.radioButton1.TabIndex = 1;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Imperial";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.imperialButton.Location = new System.Drawing.Point(12, 44);
+            this.imperialButton.Name = "imperialButton";
+            this.imperialButton.Size = new System.Drawing.Size(128, 35);
+            this.imperialButton.TabIndex = 1;
+            this.imperialButton.TabStop = true;
+            this.imperialButton.Text = "Imperial";
+            this.imperialButton.UseVisualStyleBackColor = true;
             // 
             // radioButton2
             // 
-            this.radioButton2.Location = new System.Drawing.Point(155, 44);
+            this.radioButton2.Location = new System.Drawing.Point(338, 44);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(186, 35);
+            this.radioButton2.Size = new System.Drawing.Size(207, 155);
             this.radioButton2.TabIndex = 2;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Metric";
@@ -122,11 +123,22 @@
             this.Button.Text = "Calculate!";
             this.Button.UseVisualStyleBackColor = true;
             // 
+            // metricButton
+            // 
+            this.metricButton.Location = new System.Drawing.Point(146, 44);
+            this.metricButton.Name = "metricButton";
+            this.metricButton.Size = new System.Drawing.Size(128, 35);
+            this.metricButton.TabIndex = 8;
+            this.metricButton.TabStop = true;
+            this.metricButton.Text = "Metric";
+            this.metricButton.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(304, 442);
+            this.ClientSize = new System.Drawing.Size(304, 441);
+            this.Controls.Add(this.metricButton);
             this.Controls.Add(this.Button);
             this.Controls.Add(this.outputBox);
             this.Controls.Add(this.weightBox);
@@ -134,7 +146,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.imperialButton);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -151,7 +163,7 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton imperialButton;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -159,6 +171,7 @@
         private System.Windows.Forms.TextBox weightBox;
         private System.Windows.Forms.TextBox outputBox;
         private System.Windows.Forms.Button Button;
+        private System.Windows.Forms.RadioButton metricButton;
     }
 }
 
