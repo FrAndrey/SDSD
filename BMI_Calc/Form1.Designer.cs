@@ -76,7 +76,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 126);
+            this.label1.Location = new System.Drawing.Point(-1, 130);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(136, 31);
             this.label1.TabIndex = 0;
@@ -85,7 +85,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 167);
+            this.label2.Location = new System.Drawing.Point(-1, 164);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(141, 31);
             this.label2.TabIndex = 3;
@@ -93,16 +93,16 @@
             // 
             // heightBox
             // 
-            this.heightBox.Location = new System.Drawing.Point(154, 123);
+            this.heightBox.Location = new System.Drawing.Point(141, 127);
             this.heightBox.Name = "heightBox";
-            this.heightBox.Size = new System.Drawing.Size(100, 38);
+            this.heightBox.Size = new System.Drawing.Size(89, 38);
             this.heightBox.TabIndex = 3;
             // 
             // weightBox
             // 
-            this.weightBox.Location = new System.Drawing.Point(155, 164);
+            this.weightBox.Location = new System.Drawing.Point(141, 164);
             this.weightBox.Name = "weightBox";
-            this.weightBox.Size = new System.Drawing.Size(100, 38);
+            this.weightBox.Size = new System.Drawing.Size(89, 38);
             this.weightBox.TabIndex = 4;
             this.weightBox.TextChanged += new System.EventHandler(this.WeightBox_TextChanged);
             // 
@@ -157,6 +157,7 @@
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BMI Calculator";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

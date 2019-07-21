@@ -8,6 +8,8 @@ namespace BMI_Calc
 {
     static class Program
     {
+        public static GreetingForm greetingForm;
+        public static MainForm mainForm;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +18,11 @@ namespace BMI_Calc
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            greetingForm = new GreetingForm();
+            mainForm = new MainForm();
+
+
+            //Application.Run(new MainForm());
         }
     }
 }

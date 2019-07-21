@@ -72,5 +72,10 @@ namespace BMI_Calc
                 submitButton.Enabled = false;
             }
         }
+
+        private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
