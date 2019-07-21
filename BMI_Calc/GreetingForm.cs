@@ -20,13 +20,14 @@ namespace BMI_Calc
         private void GreetingTimer_Tick(object sender, EventArgs e)
         {
             greetingTimer.Enabled = false;
+            Program.mainForm.Show();
+            this.Hide();
         }
 
         private void GreetingForm_Load(object sender, EventArgs e)
         {
             greetingTimer.Enabled = true;
-            Program.mainForm.Show();
-            this.Hide();
+          
         }
     }
 }

@@ -22,7 +22,7 @@ namespace BMI_Calc
             mainForm = new MainForm();
 
 
-            //Application.Run(new MainForm());
+            Application.Run(greetingForm);
         }
     }
 }
