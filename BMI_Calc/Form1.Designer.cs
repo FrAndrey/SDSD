@@ -96,14 +96,15 @@
             this.heightBox.Location = new System.Drawing.Point(154, 123);
             this.heightBox.Name = "heightBox";
             this.heightBox.Size = new System.Drawing.Size(100, 38);
-            this.heightBox.TabIndex = 4;
+            this.heightBox.TabIndex = 3;
             // 
             // weightBox
             // 
             this.weightBox.Location = new System.Drawing.Point(155, 164);
             this.weightBox.Name = "weightBox";
             this.weightBox.Size = new System.Drawing.Size(100, 38);
-            this.weightBox.TabIndex = 5;
+            this.weightBox.TabIndex = 4;
+            this.weightBox.TextChanged += new System.EventHandler(this.WeightBox_TextChanged);
             // 
             // outputBox
             // 
@@ -111,7 +112,7 @@
             this.outputBox.Location = new System.Drawing.Point(35, 208);
             this.outputBox.Name = "outputBox";
             this.outputBox.Size = new System.Drawing.Size(196, 38);
-            this.outputBox.TabIndex = 6;
+            this.outputBox.TabIndex = 10;
             this.outputBox.Text = "Output(result)";
             // 
             // submitButton
@@ -119,7 +120,7 @@
             this.submitButton.Location = new System.Drawing.Point(53, 252);
             this.submitButton.Name = "submitButton";
             this.submitButton.Size = new System.Drawing.Size(167, 43);
-            this.submitButton.TabIndex = 7;
+            this.submitButton.TabIndex = 5;
             this.submitButton.Text = "Calculate!";
             this.submitButton.UseVisualStyleBackColor = true;
             this.submitButton.Click += new System.EventHandler(this.SubmitButton_Click);
@@ -129,7 +130,7 @@
             this.metricButton.Location = new System.Drawing.Point(146, 44);
             this.metricButton.Name = "metricButton";
             this.metricButton.Size = new System.Drawing.Size(128, 35);
-            this.metricButton.TabIndex = 8;
+            this.metricButton.TabIndex = 2;
             this.metricButton.TabStop = true;
             this.metricButton.Text = "Metric";
             this.metricButton.UseVisualStyleBackColor = true;
@@ -156,6 +157,7 @@
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BMI Calculator";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

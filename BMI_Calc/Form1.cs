@@ -18,21 +18,59 @@ namespace BMI_Calc
         public MainForm()
         {
             InitializeComponent();
-           
-            double bmi;
-            if (imperialButton.Checked)
-                bmi = (UserWeight * 703) / (UserHeight * UserHeight);
-            else if (metricButton.Checked)
-                bmi = UserWeight / (UserHeight * UserHeight);
-            outputBox.Text = bmi.ToString();
+            
 
-           
+         
+
+
         }
 
         private void SubmitButton_Click(object sender, EventArgs e)
         {
             UserHeight = float.Parse(heightBox.Text);
             UserWeight = float.Parse(weightBox.Text);
+            double bmiImperial = (UserWeight * 703.0) / (UserHeight * UserHeight);
+            double bmiMetric = UserWeight / (UserHeight * UserHeight);
+            if (imperialButton.Checked)
+            {
+                outputBox.Text = bmiImperial.ToString();
+            }
+            else if (metricButton.Checked)
+            {
+                outputBox.Text = bmiMetric.ToString();
+
+            }
+
+            ClearForm();
+        }
+
+        private void ClearForm()
+        {
+            heightBox.Clear();
+            weightBox.Clear();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            submitButton.Enabled = false;
+        }
+
+        private void HeightBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void WeightBox_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                float.Parse(heightBox.Text);
+                submitButton.Enabled = true;
+            }
+            catch
+            {
+                submitButton.Enabled = false;
+            }
         }
     }
 }
