@@ -29,8 +29,8 @@ namespace BMI_Calc
         {
             UserHeight = float.Parse(heightBox.Text);
             UserWeight = float.Parse(weightBox.Text);
-            double bmiImperial = (UserWeight * 703.0) / (UserHeight * UserHeight);
-            double bmiMetric = UserWeight / (UserHeight * UserHeight);
+            double bmiImperial = Math.Round(((UserWeight * 703.0) / (UserHeight * UserHeight)),1);
+            double bmiMetric = Math.Round(UserWeight / (UserHeight * UserHeight),1);
             if (imperialButton.Checked)
             {
                 outputBox.Text = bmiImperial.ToString();
@@ -76,6 +76,18 @@ namespace BMI_Calc
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void ImperialButton_CheckedChanged(object sender, EventArgs e)
+        {
+            heightLabel.Text = "Inches";
+            weightLabel.Text = "Pounds";
+        }
+
+        private void MetricButton_CheckedChanged(object sender, EventArgs e)
+        {
+            heightLabel.Text = "Meters";
+            weightLabel.Text = "Kilograms";
         }
     }
 }
