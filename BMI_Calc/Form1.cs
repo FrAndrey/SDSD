@@ -12,9 +12,21 @@ namespace BMI_Calc
 {
     public partial class MainForm : Form
     {
+        public float UserHeight { get; set; }
+        public float UserWeight { get; set; }
+
         public MainForm()
         {
             InitializeComponent();
+            UserHeight = Convert.ToSingle(heightBox.Text);
+            UserWeight = Convert.ToSingle(weightBox.Text);
+            double bmi;
+            if (imperialButton.Checked)
+                bmi = (UserWeight * 703) / (UserHeight * UserHeight);
+            else if (metricButton.Checked)
+                bmi = UserWeight / (UserHeight * UserHeight);
+
+           
         }
     }
 }
