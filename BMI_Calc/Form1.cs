@@ -38,7 +38,6 @@ namespace BMI_Calc
             else if (metricButton.Checked)
             {
                 outputBox.Text = bmiMetric.ToString();
-
             }
 
             ClearForm();
@@ -55,16 +54,14 @@ namespace BMI_Calc
             submitButton.Enabled = false;
         }
 
-        private void HeightBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void WeightBox_TextChanged(object sender, EventArgs e)
         {
             try
             {
                 float.Parse(heightBox.Text);
+                float.Parse(weightBox.Text);
                 submitButton.Enabled = true;
             }
             catch
