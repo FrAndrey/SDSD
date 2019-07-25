@@ -176,7 +176,7 @@
             this.tableLayoutPanel1.Controls.Add(this.submitButton, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.outputBox, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.recomendationBox, 0, 5);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 54);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(1, 22);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 6;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 48.21429F));
@@ -185,7 +185,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(302, 315);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(302, 407);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // recomendationBox
@@ -193,8 +193,10 @@
             this.tableLayoutPanel1.SetColumnSpan(this.recomendationBox, 3);
             this.recomendationBox.Enabled = false;
             this.recomendationBox.Location = new System.Drawing.Point(3, 267);
+            this.recomendationBox.Multiline = true;
             this.recomendationBox.Name = "recomendationBox";
-            this.recomendationBox.Size = new System.Drawing.Size(296, 38);
+            this.tableLayoutPanel1.SetRowSpan(this.recomendationBox, 2);
+            this.recomendationBox.Size = new System.Drawing.Size(296, 140);
             this.recomendationBox.TabIndex = 10;
             this.recomendationBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
