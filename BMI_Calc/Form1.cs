@@ -76,10 +76,8 @@ namespace BMI_Calc
             submitButton.Enabled = false;
             try
             {
-                if (heightBox.Text != "" && weightBox.Text != "")
-                {
-                    float.Parse(heightBox.Text);
-                    float.Parse(weightBox.Text);
+                if (heightBox.Text != "" && weightBox.Text != "" && float.Parse(heightBox.Text) >0 && float.Parse(weightBox.Text) > 0)
+                {  
                     submitButton.Enabled = true;
                 }
             }
