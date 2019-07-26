@@ -72,9 +72,12 @@ namespace BMI_Calc
         {
             try
             {
-                float.Parse(heightBox.Text);
-                float.Parse(weightBox.Text);
-                submitButton.Enabled = true;
+                if (heightBox.Text != "" && weightBox.Text != "")
+                {
+                    float.Parse(heightBox.Text);
+                    float.Parse(weightBox.Text);
+                    submitButton.Enabled = true;
+                }
             }
             catch
             {
