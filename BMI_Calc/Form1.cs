@@ -38,7 +38,7 @@ namespace BMI_Calc
                 outputBox.Text = bmiImperial.ToString();
                 
             }
-            else if (metricButton.Checked)
+            if (metricButton.Checked)
             {
                 bmi = bmiMetric;
                 outputBox.Text = bmiMetric.ToString();
@@ -61,10 +61,7 @@ namespace BMI_Calc
             weightBox.Clear();
         }
 
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-            submitButton.Enabled = false;
-        }
+
 
       /// <summary>
       /// This is method to check input of Weight and Height Boxes
@@ -74,6 +71,7 @@ namespace BMI_Calc
 
         private void checkInput(object sender, EventArgs e)
         {
+            submitButton.Enabled = false;
             try
             {
                 if (heightBox.Text != "" && weightBox.Text != "")
