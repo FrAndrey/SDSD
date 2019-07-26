@@ -27,7 +27,7 @@ namespace BMI_Calc
 
         private void SubmitButton_Click(object sender, EventArgs e)
         {
-            
+                
                 UserHeight = float.Parse(heightBox.Text);
                 UserWeight = float.Parse(weightBox.Text);
                 double bmi = 0;
@@ -44,8 +44,11 @@ namespace BMI_Calc
                     bmi = bmiMetric;
                     outputBox.Text = bmiMetric.ToString();
                 }
-                if (bmi <= 18.5)
-                    recomendationBox.Text = "You need to enrich your diet. Your result is underweight.";
+            if (bmi <= 18.5)
+            {
+                recomendationBox.Text = "You need to enrich your diet. Your result is underweight.";
+                outputBox.BackColor = Color.Yellow;
+            }
                 if (bmi > 18.5 && bmi <= 24.9)
                     recomendationBox.Text = "You got a perfect balance, keep going!";
                 if (bmi > 24.9 && bmi <= 30)
@@ -54,13 +57,15 @@ namespace BMI_Calc
                     recomendationBox.Text = "You need to seriously reconsider your diet!";
 
                 ClearForm();
-            
+           
+
         }
 
         private void ClearForm()
         {
             heightBox.Clear();
             weightBox.Clear();
+       
         }
 
 
@@ -72,12 +77,13 @@ namespace BMI_Calc
       /// <param name="e"></param>
 
         private void checkInput(object sender, EventArgs e)
-        {
+        {   
             submitButton.Enabled = false;
             try
             {
                 if (heightBox.Text != "" && weightBox.Text != "" && float.Parse(heightBox.Text) >0 && float.Parse(weightBox.Text) > 0)
-                {  
+                {
+                    outputBox.BackColor = Color.White;
                     submitButton.Enabled = true;
                 }
             }

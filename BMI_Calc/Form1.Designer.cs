@@ -62,7 +62,6 @@
             this.outputBox.Name = "outputBox";
             this.outputBox.Size = new System.Drawing.Size(296, 38);
             this.outputBox.TabIndex = 10;
-            this.outputBox.Text = "Output(result)";
             this.outputBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // submitButton
@@ -192,6 +191,7 @@
             // 
             // recomendationBox
             // 
+            this.recomendationBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tableLayoutPanel1.SetColumnSpan(this.recomendationBox, 3);
             this.recomendationBox.Enabled = false;
             this.recomendationBox.Location = new System.Drawing.Point(3, 278);
