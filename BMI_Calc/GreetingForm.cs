@@ -20,7 +20,7 @@ namespace BMI_Calc
         private void GreetingTimer_Tick(object sender, EventArgs e)
         {
             greetingTimer.Enabled = false;
-            Program.mainForm.Show();
+            BMICalculator.mainForm.Show();
             this.Hide();
         }
 
