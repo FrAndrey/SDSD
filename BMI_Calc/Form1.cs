@@ -27,32 +27,34 @@ namespace BMI_Calc
 
         private void SubmitButton_Click(object sender, EventArgs e)
         {
-            UserHeight = float.Parse(heightBox.Text);
-            UserWeight = float.Parse(weightBox.Text);
-            double bmi=0;
-            double bmiImperial = Math.Round(((UserWeight * 703.0) / (UserHeight * UserHeight)),1);
-            double bmiMetric = Math.Round(UserWeight / (UserHeight * UserHeight),1);
-            if (imperialButton.Checked)
-            {
-                bmi = bmiImperial;
-                outputBox.Text = bmiImperial.ToString();
-                
-            }
-            if (metricButton.Checked)
-            {
-                bmi = bmiMetric;
-                outputBox.Text = bmiMetric.ToString();
-            }
-            if (bmi <= 18.5)
-                recomendationBox.Text = "You need to enrich your diet. Your result is underweight.";
-            if (bmi > 18.5 && bmi <= 24.9)
-                recomendationBox.Text = "You got a perfect balance, keep going!";
-            if (bmi > 24.9 && bmi <= 30)
-                recomendationBox.Text = "You are slightly out from your perfect form. Try to reduce input of Pizza";
-            if (bmi > 30)
-                recomendationBox.Text = "You need to seriously reconsider your diet!";
+            
+                UserHeight = float.Parse(heightBox.Text);
+                UserWeight = float.Parse(weightBox.Text);
+                double bmi = 0;
+                double bmiImperial = Math.Round(((UserWeight * 703.0) / (UserHeight * UserHeight)), 1);
+                double bmiMetric = Math.Round(UserWeight / (UserHeight * UserHeight), 1);
+                if (imperialButton.Checked)
+                {
+                    bmi = bmiImperial;
+                    outputBox.Text = bmiImperial.ToString();
 
-            ClearForm();
+                }
+                if (metricButton.Checked)
+                {
+                    bmi = bmiMetric;
+                    outputBox.Text = bmiMetric.ToString();
+                }
+                if (bmi <= 18.5)
+                    recomendationBox.Text = "You need to enrich your diet. Your result is underweight.";
+                if (bmi > 18.5 && bmi <= 24.9)
+                    recomendationBox.Text = "You got a perfect balance, keep going!";
+                if (bmi > 24.9 && bmi <= 30)
+                    recomendationBox.Text = "You are slightly out from your perfect form. Try to reduce input of Pizza";
+                if (bmi > 30)
+                    recomendationBox.Text = "You need to seriously reconsider your diet!";
+
+                ClearForm();
+            
         }
 
         private void ClearForm()

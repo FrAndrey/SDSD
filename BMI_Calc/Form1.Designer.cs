@@ -58,7 +58,7 @@
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.outputBox, 3);
             this.outputBox.Enabled = false;
-            this.outputBox.Location = new System.Drawing.Point(3, 289);
+            this.outputBox.Location = new System.Drawing.Point(3, 236);
             this.outputBox.Name = "outputBox";
             this.outputBox.Size = new System.Drawing.Size(296, 38);
             this.outputBox.TabIndex = 10;
@@ -69,9 +69,9 @@
             // 
             this.submitButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.SetColumnSpan(this.submitButton, 3);
-            this.submitButton.Location = new System.Drawing.Point(3, 243);
+            this.submitButton.Location = new System.Drawing.Point(3, 187);
             this.submitButton.Name = "submitButton";
-            this.submitButton.Size = new System.Drawing.Size(296, 40);
+            this.submitButton.Size = new System.Drawing.Size(296, 43);
             this.submitButton.TabIndex = 5;
             this.submitButton.Text = "Calculate!";
             this.submitButton.UseVisualStyleBackColor = true;
@@ -82,7 +82,7 @@
             this.weightLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.weightLabel.AutoSize = true;
             this.weightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.weightLabel.Location = new System.Drawing.Point(272, 199);
+            this.weightLabel.Location = new System.Drawing.Point(272, 142);
             this.weightLabel.Name = "weightLabel";
             this.weightLabel.Size = new System.Drawing.Size(0, 13);
             this.weightLabel.TabIndex = 12;
@@ -90,9 +90,9 @@
             // imperialButton
             // 
             this.imperialButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.imperialButton.Location = new System.Drawing.Point(14, 23);
+            this.imperialButton.Location = new System.Drawing.Point(14, 3);
             this.imperialButton.Name = "imperialButton";
-            this.imperialButton.Size = new System.Drawing.Size(131, 35);
+            this.imperialButton.Size = new System.Drawing.Size(131, 31);
             this.imperialButton.TabIndex = 1;
             this.imperialButton.Text = "Imperial";
             this.imperialButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -103,9 +103,9 @@
             // 
             this.metricButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tableLayoutPanel1.SetColumnSpan(this.metricButton, 2);
-            this.metricButton.Location = new System.Drawing.Point(172, 23);
+            this.metricButton.Location = new System.Drawing.Point(172, 3);
             this.metricButton.Name = "metricButton";
-            this.metricButton.Size = new System.Drawing.Size(106, 35);
+            this.metricButton.Size = new System.Drawing.Size(106, 31);
             this.metricButton.TabIndex = 2;
             this.metricButton.Text = "Metric";
             this.metricButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -115,7 +115,7 @@
             // weightBox
             // 
             this.weightBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.weightBox.Location = new System.Drawing.Point(157, 186);
+            this.weightBox.Location = new System.Drawing.Point(157, 129);
             this.weightBox.Name = "weightBox";
             this.weightBox.Size = new System.Drawing.Size(76, 38);
             this.weightBox.TabIndex = 4;
@@ -124,7 +124,7 @@
             // heightBox
             // 
             this.heightBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.heightBox.Location = new System.Drawing.Point(157, 107);
+            this.heightBox.Location = new System.Drawing.Point(157, 56);
             this.heightBox.Name = "heightBox";
             this.heightBox.Size = new System.Drawing.Size(76, 38);
             this.heightBox.TabIndex = 3;
@@ -134,7 +134,7 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 190);
+            this.label2.Location = new System.Drawing.Point(3, 133);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(141, 31);
             this.label2.TabIndex = 3;
@@ -144,7 +144,7 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 111);
+            this.label1.Location = new System.Drawing.Point(6, 59);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(136, 31);
             this.label1.TabIndex = 0;
@@ -155,7 +155,7 @@
             this.heightLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.heightLabel.AutoSize = true;
             this.heightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.heightLabel.Location = new System.Drawing.Point(272, 120);
+            this.heightLabel.Location = new System.Drawing.Point(272, 68);
             this.heightLabel.Name = "heightLabel";
             this.heightLabel.Size = new System.Drawing.Size(0, 13);
             this.heightLabel.TabIndex = 12;
@@ -180,12 +180,12 @@
             this.tableLayoutPanel1.Location = new System.Drawing.Point(1, 22);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 6;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 48.21429F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.78571F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 69F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 32.74854F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 67.25146F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 71F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 42F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 111F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(302, 407);
             this.tableLayoutPanel1.TabIndex = 0;
@@ -194,11 +194,11 @@
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.recomendationBox, 3);
             this.recomendationBox.Enabled = false;
-            this.recomendationBox.Location = new System.Drawing.Point(3, 339);
+            this.recomendationBox.Location = new System.Drawing.Point(3, 278);
             this.recomendationBox.Multiline = true;
             this.recomendationBox.Name = "recomendationBox";
             this.tableLayoutPanel1.SetRowSpan(this.recomendationBox, 2);
-            this.recomendationBox.Size = new System.Drawing.Size(296, 65);
+            this.recomendationBox.Size = new System.Drawing.Size(296, 126);
             this.recomendationBox.TabIndex = 10;
             this.recomendationBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
