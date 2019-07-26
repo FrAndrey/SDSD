@@ -66,9 +66,13 @@ namespace BMI_Calc
             submitButton.Enabled = false;
         }
 
-      
+      /// <summary>
+      /// This is method to check input of Weight and Height Boxes
+      /// </summary>
+      /// <param name="sender"></param>
+      /// <param name="e"></param>
 
-        private void WeightBox_TextChanged(object sender, EventArgs e)
+        private void checkInput(object sender, EventArgs e)
         {
             try
             {
