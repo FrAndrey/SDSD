@@ -20,7 +20,6 @@ namespace BMI_Calc
             InitializeComponent();
             
 
-         
 
 
         }
@@ -48,15 +47,35 @@ namespace BMI_Calc
             {
                 recomendationBox.Text = "You need to enrich your diet. Your result is underweight.";
                 outputBox.BackColor = Color.Yellow;
+                recomendationBox.BackColor = Color.White;
             }
-                if (bmi > 18.5 && bmi <= 24.9)
-                    recomendationBox.Text = "You got a perfect balance, keep going!";
-                if (bmi > 24.9 && bmi <= 30)
-                    recomendationBox.Text = "You are slightly out from your perfect form. Try to reduce input of Pizza";
-                if (bmi > 30)
-                    recomendationBox.Text = "You need to seriously reconsider your diet!";
+            if (bmi > 18.5 && bmi <= 24.9)
+            {
+                recomendationBox.Text = "You got a perfect balance, keep going!";        
+                outputBox.BackColor = Color.GreenYellow;
+                recomendationBox.BackColor = Color.White;
+            }
+            if (bmi > 24.9 && bmi <= 30)
+            {
+                recomendationBox.Text = "You are slightly out from your perfect form. Try to reduce input of Pizza";
+                outputBox.BackColor = Color.Yellow;
+                recomendationBox.BackColor = Color.White;
+            }
+            if (bmi > 30)
+            {
+                recomendationBox.Text = "You need to seriously reconsider your diet!";
+                outputBox.BackColor = Color.Pink;
+                recomendationBox.BackColor = Color.White;
+            }
+            if (bmi > 100 || bmi < 5)
+            {
+                outputBox.Text = "";
+                outputBox.BackColor = Color.White;
+                recomendationBox.Text = "Please enter the right values";
+                recomendationBox.BackColor = Color.Pink;
+            }
 
-                ClearForm();
+            ClearForm();
            
 
         }

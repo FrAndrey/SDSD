@@ -18,6 +18,7 @@ namespace BMI_Calc
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+          
             greetingForm = new GreetingForm();
             mainForm = new MainForm();
 
